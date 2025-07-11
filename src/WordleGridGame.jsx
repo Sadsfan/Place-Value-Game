@@ -500,8 +500,8 @@ const WordleGridGame = () => {
           
           <div className="mb-4">
             <h2 className="text-sm font-semibold mb-2">Drag Letters:</h2>
-            <div className="grid gap-1 grid-cols-4">
-              {palette.slice(0, 20).map((item, index) => (
+            <div className="grid gap-1 grid-cols-4 max-h-64 overflow-y-auto">
+              {palette.map((item, index) => (
                 <div
                   key={index}
                   draggable
